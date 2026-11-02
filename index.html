@@ -103,13 +103,13 @@ nav {
 .projetos { background: var(--bg); }
 .projetos .section-title { color: var(--fg); text-align: center; margin-bottom: 3rem; }
 .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 900px; margin: 0 auto; }
-.project-card { display: block; text-decoration: none; color: inherit; background: #0d0d1c; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); transition: transform .22s, border-color .22s; cursor: pointer; }
+.project-card { display: flex; flex-direction: column; height: 420px; text-decoration: none; color: inherit; background: #0d0d1c; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); transition: transform .22s, border-color .22s; cursor: pointer; }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(124,58,237,.4); }
-.project-thumb { width: 100%; aspect-ratio: 9/16; overflow: hidden; background: linear-gradient(168deg, #1c0840 0%, #0d0d1c 80%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .5rem; padding: 0; }
-.project-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.project-thumb { width: 100%; flex: 1; min-height: 0; overflow: hidden; background: linear-gradient(168deg, #1c0840 0%, #0d0d1c 80%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .5rem; padding: 0; }
+.project-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .project-thumb-icon { font-size: 2.2rem; opacity: .3; }
 .project-thumb-label { font-size: .7rem; color: rgba(255,255,255,.2); font-weight: 500; text-align: center; }
-.project-meta { padding: .9rem 1rem .85rem; }
+.project-meta { flex-shrink: 0; padding: .9rem 1rem .85rem; }
 .project-cat { font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--cyan); margin-bottom: .3rem; }
 .project-name { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .92rem; color: var(--fg); }
 
@@ -285,7 +285,7 @@ nav {
 
       <a class="project-card" href="https://alissonkr.github.io/amaras/" target="_blank" rel="noopener noreferrer">
         <div class="project-thumb">
-          <img src="https://image.thum.io/get/width/400/crop/700/https://alissonkr.github.io/amaras/" alt="Mockup do site Amaras" loading="lazy">
+          <img src="https://image.thum.io/get/width/1200/crop/800/https://alissonkr.github.io/amaras/" alt="Mockup do site Amaras" loading="lazy">
         </div>
         <div class="project-meta">
           <p class="project-cat">Fotografia</p>
@@ -294,7 +294,7 @@ nav {
       </a>
       <a class="project-card" href="https://alissonkr.github.io/mattos-climatizacao/" target="_blank" rel="noopener noreferrer">
         <div class="project-thumb">
-          <img src="https://image.thum.io/get/width/400/crop/700/https://alissonkr.github.io/mattos-climatizacao/" alt="Mockup do site Mattos Climatização" loading="lazy">
+          <img src="https://image.thum.io/get/width/1200/crop/800/https://alissonkr.github.io/mattos-climatizacao/" alt="Mockup do site Mattos Climatização" loading="lazy">
         </div>
         <div class="project-meta">
           <p class="project-cat">Climatização</p>
@@ -303,7 +303,7 @@ nav {
       </a>
       <a class="project-card" href="https://aclogtransporte.com.br/" target="_blank" rel="noopener noreferrer">
         <div class="project-thumb">
-          <img src="https://image.thum.io/get/width/400/crop/700/https://aclogtransporte.com.br/" alt="Mockup do site ACLog Transporte" loading="lazy">
+          <img src="https://image.thum.io/get/width/1200/crop/800/https://aclogtransporte.com.br/" alt="Mockup do site ACLog Transporte" loading="lazy">
         </div>
         <div class="project-meta">
           <p class="project-cat">Logística</p>
