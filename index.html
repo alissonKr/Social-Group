@@ -102,10 +102,10 @@ nav {
 /* PROJETOS */
 .projetos { background: var(--bg); }
 .projetos .section-title { color: var(--fg); text-align: center; margin-bottom: 3rem; }
-.projects-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
-.project-card { background: #0d0d1c; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); transition: transform .22s, border-color .22s; cursor: pointer; }
+.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 900px; margin: 0 auto; }
+.project-card { display: block; text-decoration: none; color: inherit; background: #0d0d1c; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); transition: transform .22s, border-color .22s; cursor: pointer; }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(124,58,237,.4); }
-.project-thumb { width: 100%; aspect-ratio: 9/16; overflow: hidden; background: linear-gradient(168deg, #1c0840 0%, #0d0d1c 80%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .5rem; padding: 1rem; }
+.project-thumb { width: 100%; aspect-ratio: 9/16; overflow: hidden; background: linear-gradient(168deg, #1c0840 0%, #0d0d1c 80%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .5rem; padding: 0; }
 .project-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .project-thumb-icon { font-size: 2.2rem; opacity: .3; }
 .project-thumb-label { font-size: .7rem; color: rgba(255,255,255,.2); font-weight: 500; text-align: center; }
@@ -283,61 +283,33 @@ nav {
     <h2 class="section-title">Projetos</h2>
     <div class="projects-grid">
 
-      <!-- 🔁 Projeto 1 — troque categoria, nome e coloque <img> no .project-thumb -->
-      <div class="project-card">
+      <a class="project-card" href="https://alissonkr.github.io/amaras/" target="_blank" rel="noopener noreferrer">
         <div class="project-thumb">
-          <div class="project-thumb-label">mockup aqui</div>
+          <img src="https://image.thum.io/get/width/400/crop/700/https://alissonkr.github.io/amaras/" alt="Mockup do site Amaras" loading="lazy">
         </div>
         <div class="project-meta">
-          <p class="project-cat">E-commerce</p>
-          <p class="project-name">Nome do Projeto</p>
+          <p class="project-cat">Fotografia</p>
+          <p class="project-name">Amaras</p>
         </div>
-      </div>
-
-      <!-- 🔁 Projeto 2 -->
-      <div class="project-card">
+      </a>
+      <a class="project-card" href="https://alissonkr.github.io/mattos-climatizacao/" target="_blank" rel="noopener noreferrer">
         <div class="project-thumb">
-          <div class="project-thumb-label">mockup aqui</div>
+          <img src="https://image.thum.io/get/width/400/crop/700/https://alissonkr.github.io/mattos-climatizacao/" alt="Mockup do site Mattos Climatização" loading="lazy">
         </div>
         <div class="project-meta">
-          <p class="project-cat">Portfólio</p>
-          <p class="project-name">Nome do Projeto</p>
+          <p class="project-cat">Climatização</p>
+          <p class="project-name">Mattos Climatização</p>
         </div>
-      </div>
-
-      <!-- 🔁 Projeto 3 -->
-      <div class="project-card">
+      </a>
+      <a class="project-card" href="https://aclogtransporte.com.br/" target="_blank" rel="noopener noreferrer">
         <div class="project-thumb">
-          <div class="project-thumb-label">mockup aqui</div>
+          <img src="https://image.thum.io/get/width/400/crop/700/https://aclogtransporte.com.br/" alt="Mockup do site ACLog Transporte" loading="lazy">
         </div>
         <div class="project-meta">
-          <p class="project-cat">Agronegócio</p>
-          <p class="project-name">Nome do Projeto</p>
+          <p class="project-cat">Logística</p>
+          <p class="project-name">ACLog Transporte</p>
         </div>
-      </div>
-
-      <!-- 🔁 Projeto 4 -->
-      <div class="project-card">
-        <div class="project-thumb">
-          <div class="project-thumb-label">mockup aqui</div>
-        </div>
-        <div class="project-meta">
-          <p class="project-cat">Beleza</p>
-          <p class="project-name">Nome do Projeto</p>
-        </div>
-      </div>
-
-      <!-- 🔁 Projeto 5 -->
-      <div class="project-card">
-        <div class="project-thumb">
-          <div class="project-thumb-label">mockup aqui</div>
-        </div>
-        <div class="project-meta">
-          <p class="project-cat">Institucional</p>
-          <p class="project-name">Nome do Projeto</p>
-        </div>
-      </div>
-
+      </a>
     </div>
   </div>
 </section>
