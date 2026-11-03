@@ -153,7 +153,7 @@ nav {
 .footer-right { text-align: right; }
 .footer-tagline { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.18; letter-spacing: -.025em; }
 .footer-tagline em { font-style: italic; color: var(--purple); }
-.footer-mascot { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: min(340px, 55vw); opacity: .06; pointer-events: none; }
+.footer-mascot { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: min(340px, 55vw); height: auto; opacity: .08; z-index: 0; pointer-events: none; }
 .footer-bottom { position: relative; z-index: 2; max-width: 1160px; margin: 2.5rem auto 0; border-top: 1px solid rgba(0,0,0,.09); padding: 1.2rem 0; font-size: .8rem; color: var(--fg-muted-l); text-align: center; }
 
 /* RESPONSIVE */
@@ -337,15 +337,7 @@ nav {
 
 <!-- FOOTER -->
 <footer class="footer" id="contato">
-  <svg class="footer-mascot" viewBox="0 0 310 342" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M 148 290 C 96 274 46 240 38 193 C 30 144 50 86 86 56 C 114 30 150 20 178 38 C 194 49 204 66 200 83 C 188 100 174 114 171 142 C 168 170 165 210 164 246 C 161 270 155 286 150 290 Z" fill="#7c3aed"/>
-    <path d="M 198 81 C 186 97 175 112 172 140 C 169 167 166 208 164 244" stroke="#f0f0f6" stroke-width="14" fill="none" stroke-linecap="round"/>
-    <path d="M 222 150 C 233 131 247 108 259 113 C 268 118 263 140 248 150 Z" fill="#7c3aed"/>
-    <ellipse cx="198" cy="263" rx="62" ry="58" fill="#7c3aed"/>
-    <ellipse cx="224" cy="185" rx="44" ry="41" fill="#7c3aed"/>
-    <ellipse cx="174" cy="314" rx="23" ry="12" fill="#7c3aed" transform="rotate(-10 174 314)"/>
-    <ellipse cx="201" cy="320" rx="19" ry="11" fill="#7c3aed" transform="rotate(6 201 320)"/>
-  </svg>
+  <img class="footer-mascot" src="assets/images/logo.png" alt="" aria-hidden="true">
 
   <div class="footer-inner">
     <div>
